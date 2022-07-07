@@ -1,0 +1,29 @@
+.countdown {
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+
+  .box {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    p.title {
+      font-size: 2rem;
+    }
+
+    p.value {
+      border: 2px solid #e91e63;
+      background: #432773;
+      border-radius: 15px;
+      min-height: 6rem;
+      margin: 0 1rem;
+      padding: 1rem;
+      width: 5rem;
+    }
+  }
+}

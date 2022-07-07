@@ -1,0 +1,16 @@
+<button
+  class="button scale-in-center"
+  [class.scale-out-center]="hideButton"
+  (click)="onClick()"
+>
+  LAUNCH APOLLO
+</button>
+
+<!-- rocket-go animation -->
+<ng-lottie
+  *ngIf="hideButton && isClicked"
+  class="rocket"
+  height="400px"
+  [options]="options"
+  (complete)="onAnimationComplete()"
+></ng-lottie>
